@@ -1,0 +1,22 @@
+﻿@model UsuarioModel
+
+@{
+    ViewData["Title"] = "Registro de usuario";
+}
+
+ <h1>Registro de usuarios</h1>
+<form method="post" class="form-floating">
+    <div class="form-group">
+        <label asp-for="UsuarioSistema"></label>
+        <input class="form-control" asp-for="UsuarioSistema" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input class="form-control" asp-for="Nombre" />
+    </div>
+    
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

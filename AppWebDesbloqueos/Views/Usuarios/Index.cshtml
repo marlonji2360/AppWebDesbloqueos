@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Inicio Usuarios";
+}
+
+<br />
+<div class="text-center">
+    <h1 class="display-4">Registro de usuarios</h1>
+    <br />
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id Usuario</th>
+                    <th>Usuario</th>
+                    <th>Nombre</th>                    
+                </tr>
+            </thead>
+            @{
+                if (ViewBag.Usuarios != null)
+                {
+                    foreach (var item in ViewBag.Usuarios)
+                    {
+                        <tr>
+                            <td>@item.IdUsuario</td>
+                            <td>@item.UsuarioSistema</td>
+                            <td>@item.Nombre</td>                           
+                            <td>
+                                <a asp-action="Editar" class="btn btn-warning" asp-route-id="@item.IdUsuario">Editar</a>
+                                <a asp-action="Detalles" class="btn btn-primary" asp-route-id="@item.IdUsuario">Detalles</a> |
+                                <a asp-action="Eliminar" class="btn btn-danger" asp-route-id="@item.IdUsuario">Eliminar</a> |
+
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </table>
+    </div>
+
+</div>
