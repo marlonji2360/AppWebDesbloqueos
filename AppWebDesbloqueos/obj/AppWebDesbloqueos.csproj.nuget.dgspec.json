@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marlon_jimenez\\Source\\Repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj": {}
+    "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marlon_jimenez\\Source\\Repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj": {
+    "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marlon_jimenez\\Source\\Repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj",
+        "projectUniqueName": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj",
         "projectName": "AppWebDesbloqueos",
-        "projectPath": "C:\\Users\\marlon_jimenez\\Source\\Repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj",
+        "projectPath": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\AppWebDesbloqueos.csproj",
         "packagesPath": "C:\\Users\\marlon_jimenez\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\marlon_jimenez\\Source\\Repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\obj\\",
         "projectStyle": "PackageReference",
