@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Inicio Desbloqueos";
+}
+
+<br />
+<div class="text-center">
+    <h1 class="">Registro de Desbloqueos</h1>
+    <br />
+    <p>
+        <a asp-action="Registrar" class="btn btn-sm btn-primary">Registar</a>
+    </p>
+
+    <form asp-controller="Desbloqueos" asp-action="Index" method="get">
+        <p>
+            Buscar: <input type="text" name="buscar" class="form.text" />
+            <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+        </p>
+
+    </form>
+    <div table-responsive-xl>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Fecha Ingreso</th>
+                    <th>Fecha Respuesta</th>
+                    <th>Tiempo De Atencion</th>
+                    <th>Operacion Realizada</th>                        
+                    <th>Observaciones</th>
+                    <th>Lista</th>
+                    <th>CN</th>    
+                    <th>
+                        <a asp-action="Index" asp-route-sortOrder="@ViewBag.EstadoSortParm">Estado</a>
+                    </th>  
+                </tr>
+            </thead>
+            @{
+                if (ViewBag.Desbloqueos != null)
+                {
+                    foreach (var item in ViewBag.Desbloqueos)
+                    {
+                        <tr>
+                            
+                            <td>@item.Id</td>
+                            <td>@item.Usuario</td>
+                            <td>@item.Nombre</td>
+                            <td>@item.FechaCorreo</td>
+                            <td>@item.FechaRespuestaDesbloqueo</td>
+                            <td>@item.TiempoDeAtencion</td>
+                            <td>@item.OperacionRealizada1</td> 
+                            <td>@item.Observaciones</td>
+                            <td>@item.Lista</td>
+                            <td>@item.Cn</td>
+                            <td>@item.Estado</td>
+                            
+                            <td>
+                                <a asp-action="Editar" class="btn btn-warning" asp-route-id="@item.Id">Editar</a>
+                            </td>
+                            <td>
+                                <a asp-action="Detalles" class="btn btn-primary" asp-route-id="@item.Id">Detalles</a>                             
+                            </td>
+                            <td>
+                                <a asp-action="Eliminar" class="btn btn-danger" asp-route-id="@item.Id">Eliminar</a>
+                            </td>
+                           
+                        </tr>
+                    }
+                }
+            }
+        </table>
+    </div>
+</div>

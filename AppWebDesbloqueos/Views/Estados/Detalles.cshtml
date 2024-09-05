@@ -1,0 +1,25 @@
+﻿@model EstadoModel
+
+@{
+    ViewData["Title"] = "Detalles Estados";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Centro Negocio</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nombre del Estado
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(EstadoModel => EstadoModel.NombreEstado)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" class="btn btn-warning" asp-route-id="@Model?.Id">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>

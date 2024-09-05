@@ -1,0 +1,18 @@
+﻿@model EstadoModel
+
+@{
+    ViewData["Title"] = "Registro de Estados";
+}
+
+<h1>Registro de Estados</h1>
+<form method="post" class="form-floating">
+    <div class="form-group">
+        <label asp-for="NombreEstado">Nombre del Estado</label>
+        <input class="form-control" asp-for="NombreEstado" />
+    </div>
+
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

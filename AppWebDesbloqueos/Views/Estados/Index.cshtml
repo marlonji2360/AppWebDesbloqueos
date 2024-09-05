@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Inicio Estados";
+}
+
+<br />
+<div class="text-center">
+    <h1 class="display-4">Estados</h1>
+    <br />
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre Estado</th>
+                </tr>
+            </thead>
+            @{
+                if (ViewBag.Estados != null)
+                {
+                    foreach (var item in ViewBag.Estados)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.NombreEstado</td>
+                            <td>
+                                <a asp-action="Editar" class="btn btn-warning" asp-route-id="@item.Id">Editar</a> |
+                                <a asp-action="Detalles" class="btn btn-primary" asp-route-id="@item.Id">Detalles</a> |
+                                <a asp-action="Eliminar" class="btn btn-danger" asp-route-id="@item.Id">Eliminar</a> |
+
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </table>
+    </div>
+
+</div>

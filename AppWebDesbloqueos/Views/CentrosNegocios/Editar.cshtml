@@ -1,0 +1,28 @@
+﻿@model CentroNegocioModel
+
+@{
+    ViewData["Title"] = "Editar Centro Negocios";
+}
+
+<h1>Editar Centro Negocios</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdCn" />
+            <div class="form-group">
+                <label asp-for="NombreCn" class="control-label"></label>
+                <input asp-for="NombreCn" class="form-control" />
+                <span asp-validation-for="NombreCn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Grabar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>

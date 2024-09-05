@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Inicio Listas";
+}
+
+<br />
+<div class="text-center">
+    <h1 class="display-4">Listas</h1>
+    <br />
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id Listas</th>
+                    <th>Lista</th>
+                </tr>
+            </thead>
+            @{
+                if (ViewBag.Listas != null)
+                {
+                    foreach (var item in ViewBag.Listas)
+                    {
+                        <tr>
+                            <td>@item.IdLista</td>
+                            <td>@item.NombreLista</td>
+                            <td>
+                                <a asp-action="Editar" class="btn btn-warning" asp-route-id="@item.IdLista">Editar</a> |
+                                <a asp-action="Detalles" class="btn btn-primary" asp-route-id="@item.IdLista">Detalles</a> |
+                                <a asp-action="Eliminar" class="btn btn-danger" asp-route-id="@item.IdLista">Eliminar</a> |
+
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </table>
+    </div>
+
+</div>

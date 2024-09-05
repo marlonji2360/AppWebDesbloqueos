@@ -1,0 +1,126 @@
+﻿@model DesbloqueoModel
+
+@{
+    ViewData["Title"] = "Detalles Desbloqueo";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Desbloqueo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            Fecha y Hora Ingreso de Correo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.FechaCorreo)
+        </dd>
+        <dt class="col-sm-2">
+            Operación Realizada
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.OperacionRealizada1)
+        </dd>
+        <dt class="col-sm-2">
+            Fecha de Bloqueo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Fecha2)
+        </dd>
+        <dt class="col-sm-2">
+            Estado
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Estado)
+        </dd>
+        <dt class="col-sm-2">
+            Observación
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Observacion)
+        </dd>
+        <dt class="col-sm-2">
+            Lista
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Lista)
+        </dd>
+        <dt class="col-sm-2">
+            CN
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Cn)
+        </dd>        
+        <dt class="col-sm-2">
+            Tiempo de Atención (HH:MM)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.TiempoDeAtencion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Accionista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Accionista)
+        </dd>
+        <dt class="col-sm-2">
+            Informes Regulatorio
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.InformesRegulatorio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.AccResultado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.AccResultado)
+        </dd>
+        <dt class="col-sm-2">
+            Otras Observaciones
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Observaciones)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.UsuarioCreacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.UsuarioCreacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.UsuarioModificacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.UsuarioModificacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.FechaCreacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.FechaCreacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.FechaModificacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.FechaModificacion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" class="btn btn-warning" asp-route-id="@Model?.Id">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>

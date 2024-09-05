@@ -1,0 +1,18 @@
+﻿@model OperacionRealizadaModel
+
+@{
+    ViewData["Title"] = "Registro de operaciones";
+}
+
+<h1>Registro de operaciones</h1>
+<form method="post" class="form-floating">
+    <div class="form-group">
+        <label asp-for="OperacionRealizada"></label>
+        <input class="form-control" asp-for="OperacionRealizada" />
+    </div>
+    
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

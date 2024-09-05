@@ -1,0 +1,24 @@
+﻿@model ObservacionesModel
+
+@{
+    ViewData["Title"] = "Eliminar observacion";
+}
+
+<h1>Eliminar</h1>
+
+<div>
+    <h4>¿Estas seguro de eliminar esta observación?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(ObservacionesModel => ObservacionesModel.ObservacionesDetalle)
+        </dt>
+    </dl>
+</div>
+<div>
+    <form asp-action="Eliminar" method="post">
+        <input type="hidden" asp-for="IdObservacion" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

@@ -1,0 +1,80 @@
+﻿@model DesbloqueoModel
+
+@{
+    ViewData["Title"] = "Registro de desbloqueos";
+}
+
+<h1>Registro de desbloqueos</h1>
+<br />
+<form method="post" class="row g-3 form-floating">
+    <div class="col-md-4">
+        <label asp-for="Usuario"></label>
+        @Html.DropDownList("Usuario", ViewBag.Usuarios as SelectList, "Selecciona un Usuario", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Nombre"></label>
+        <input class="form-control" asp-for="Nombre" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="FechaCorreo">Fecha y Hora Ingreso de Correo</label>
+        <input class="form-control" asp-for="FechaCorreo" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Lista"></label>
+        @Html.DropDownList("Lista", ViewBag.Listas as SelectList, "Selecciona una Lista", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label asp-for="OperacionRealizada1">Operación Realizada</label>
+        @Html.DropDownList("OperacionRealizada1", ViewBag.Operaciones as SelectList, "Selecciona una Operacion", new { @class = "form-control" })
+    </div> 
+    <div class="col-md-4">
+        <label asp-for="FechaRespuestaDesbloqueo">Fecha y Hora de Respuesta</label>
+        <input class="form-control" asp-for="FechaRespuestaDesbloqueo" />
+    </div>               
+    <div class="col-md-4">
+        <label asp-for="OperacionRealizada2">Otra Operación Realizada</label>
+        @Html.DropDownList("OperacionRealizada2", ViewBag.Operaciones as SelectList, "Selecciona una Operacion", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Fecha2">Fecha de Bloqueo</label>
+        <input class="form-control" asp-for="Fecha2" />
+    </div>    
+    <div class="col-md-4">
+        <label asp-for="Observacion">Observación</label>
+        @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Cn">CN</label>
+        @Html.DropDownList("Cn", ViewBag.Cn as SelectList, "Selecciona un CN", new { @class = "form-control" })
+    </div>   
+    <div class="col-md-4">
+        <label asp-for="Estado">Estado</label>
+        @Html.DropDownList("Estado", ViewBag.Estados as SelectList, "Selecciona un Estado", new { @class = "form-control" })
+    </div>
+    <div class="col-md-4">
+        <label asp-for="Accionista"></label>
+        <select asp-for="Accionista" class="form-control">
+            <option value="">Selecciona una Opción</option>
+
+            <option value="SI">SI</option>
+
+            <option value="NO">NO</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label asp-for="InformesRegulatorio">Informes Regulatorio</label>
+        <input class="form-control" asp-for="InformesRegulatorio" />
+    </div>
+    <div class="col-md-4">
+        <label asp-for="AccResultado"></label>
+        <input class="form-control" asp-for="AccResultado" />
+    </div>
+    <div class="col-md-8">
+        <label asp-for="Observaciones">Observaciones Adicionales</label>
+        <input class="form-control" asp-for="Observaciones" />
+    </div>
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

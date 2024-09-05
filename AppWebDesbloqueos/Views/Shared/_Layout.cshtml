@@ -22,16 +22,69 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Desbloqueos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Desbloqueos" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Desbloqueos" asp-action="Index">Visualizar</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Usuarios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Visualizar</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Operaciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="OperacionesRealizadas" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="OperacionesRealizadas" asp-action="Index">Visualizar</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Registrar">Registro</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Observaciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Observaciones" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Observaciones" asp-action="Index">Visualizar</a></li>
+                            </ul>
                         </li>
-                    </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Listas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Listas" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Listas" asp-action="Index">Visualizar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                CN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="CentrosNegocios" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="CentrosNegocios" asp-action="Index">Visualizar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estados
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Estados" asp-action="Registrar">Registro</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Estados" asp-action="Index">Visualizar</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
                 </div>
             </div>
         </nav>
@@ -44,7 +97,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - AppWebDesbloqueos - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - AppWebDesbloqueos - <a asp-area="" asp-controller="Home" asp-action="Index">Index</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

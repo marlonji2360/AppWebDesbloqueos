@@ -1,0 +1,25 @@
+﻿@model ObservacionesModel
+
+@{
+    ViewData["Title"] = "Detalles Observaciones";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Observaciones</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(ObservacionesModel => ObservacionesModel.ObservacionesDetalle)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(ObservacionesModel => ObservacionesModel.ObservacionesDetalle)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" class="btn btn-warning" asp-route-id="@Model?.IdObservacion">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>

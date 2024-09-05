@@ -1,0 +1,25 @@
+﻿@model ListaModel
+
+@{
+    ViewData["Title"] = "Detalles Listas";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Listas</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(ListaModel => ListaModel.NombreLista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(ListaModel => ListaModel.NombreLista)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" class="btn btn-warning" asp-route-id="@Model?.IdLista">Editar</a> |
+    <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+</div>

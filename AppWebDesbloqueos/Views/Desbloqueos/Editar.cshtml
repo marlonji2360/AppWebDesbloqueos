@@ -1,0 +1,99 @@
+﻿@model DesbloqueoModel
+
+@{
+    ViewData["Title"] = "Editar Desbloqueo";
+}
+
+<h1>Editar Desbloqueo</h1>
+<hr />
+
+<form class="row g-3" asp-action="Editar" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <div class="col-md-4 form-group">
+        <label asp-for="Usuario" class="control-label"></label>
+        @Html.DropDownList("Usuario", ViewBag.Usuarios as SelectList, "Selecciona un Usuario", new { @class = "form-control" })
+        <span asp-validation-for="Usuario" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="FechaCorreo" class="control-label">Fecha y Hora Ingreso Correo</label>
+        <input asp-for="FechaCorreo" class="form-control" />
+        <span asp-validation-for="FechaCorreo" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="Lista" class="control-label"></label>
+        @Html.DropDownList("Lista", ViewBag.Listas as SelectList, "Selecciona una Lista", new { @class = "form-control" })
+        <span asp-validation-for="Lista" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="OperacionRealizada1" class="control-label">Operación Realizada</label>
+        @Html.DropDownList("OperacionRealizada1", ViewBag.Operaciones1 as SelectList, "Selecciona una Operacion Realizada", new { @class = "form-control" })
+        <span asp-validation-for="OperacionRealizada1" class="text-danger"></span>
+    </div>    
+    <div class="col-md-4 form-group">
+        <label asp-for="FechaRespuestaDesbloqueo" class="control-label">Fecha y Hora de Respuesta</label>
+        <input asp-for="FechaRespuestaDesbloqueo" class="form-control" />
+        <span asp-validation-for="FechaRespuestaDesbloqueo" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="OperacionRealizada2" class="control-label">Otra Operación Realizada</label>
+        @Html.DropDownList("OperacionRealizada2", ViewBag.Operaciones2 as SelectList, "Selecciona una Operacion Realizada", new { @class = "form-control" })
+        <span asp-validation-for="OperacionRealizada2" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="Fecha2" class="control-label">Fecha de Bloqueo</label>
+        <input asp-for="Fecha2" class="form-control" />
+        <span asp-validation-for="Fecha2" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="Observacion" class="control-label">Observación</label>
+        @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
+        <span asp-validation-for="Observacion" class="text-danger"></span>
+    </div>    
+    <div class="col-md-4 form-group">
+        <label asp-for="Cn" class="control-label">CN</label>
+        @Html.DropDownList("Cn", ViewBag.Cns as SelectList, "Selecciona un CN", new { @class = "form-control" })
+        <span asp-validation-for="Cn" class="text-danger"></span>
+    </div>    
+    <div class="col-md-4 form-group">
+        <label asp-for="Accionista" class="control-label"></label>
+        <select asp-for="Accionista" class="form-control">
+            <option value="">Selecciona una Opción</option>
+
+            <option value="SI">SI</option>
+
+            <option value="NO">NO</option>
+        </select>
+        <span asp-validation-for="Accionista" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="Estado" class="control-label"></label>
+        @Html.DropDownList("Estado", ViewBag.Estados as SelectList, "Selecciona un Estado", new { @class = "form-control" })
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="InformesRegulatorio" class="control-label"></label>
+        <input asp-for="InformesRegulatorio" class="form-control" />
+        <span asp-validation-for="InformesRegulatorio" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="AccResultado" class="control-label"></label>
+        <input asp-for="AccResultado" class="form-control" />
+        <span asp-validation-for="AccResultado" class="text-danger"></span>
+    </div>    
+    <div class="col-md-8 form-group">
+        <label asp-for="Observaciones" class="control-label"></label>
+        <input asp-for="Observaciones" class="form-control" />
+        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="submit" value="Grabar" class="btn btn-primary" /> |
+        <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+    </div>
+</form>

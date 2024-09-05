@@ -170,10 +170,6 @@ namespace AppWebDesbloqueos.Controllers
                     return resultado > 0; // Si se actualizó al menos una fila
                 }
             }
-
-           
-
-            
         }
 
         public IActionResult Detalles(int? id)

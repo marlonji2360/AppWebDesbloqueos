@@ -1,0 +1,111 @@
+﻿@model DesbloqueoModel
+
+@{
+    ViewData["Title"] = "Eliminar Desbloqueo";
+}
+
+<h1>Eliminar</h1>
+
+<div>
+    <h4>¿Estas seguro de eliminar este registro?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.FechaCorreo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.FechaCorreo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.OperacionRealizada1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.OperacionRealizada1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.FechaRespuestaDesbloqueo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.FechaRespuestaDesbloqueo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.OperacionRealizada2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.OperacionRealizada2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Fecha2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Fecha2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Observaciones)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Observaciones)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Lista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Lista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Cn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Cn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Observacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Observacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.TiempoDeAtencion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.TiempoDeAtencion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.Accionista)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.Accionista)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.InformesRegulatorio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.InformesRegulatorio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(DesbloqueoModel => DesbloqueoModel.AccResultado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(DesbloqueoModel => DesbloqueoModel.AccResultado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <form asp-action="Eliminar" method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

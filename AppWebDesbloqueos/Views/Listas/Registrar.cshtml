@@ -1,0 +1,18 @@
+﻿@model ListaModel
+
+@{
+    ViewData["Title"] = "Registro de listas";
+}
+
+<h1>Registro de listas</h1>
+<form method="post" class="form-floating">
+    <div class="form-group">
+        <label asp-for="NombreLista"></label>
+        <input class="form-control" asp-for="NombreLista" />
+    </div>
+
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

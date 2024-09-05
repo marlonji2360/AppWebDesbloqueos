@@ -17,59 +17,179 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppWebDesbloqueos
 build_property.RootNamespace = AppWebDesbloqueos
-build_property.ProjectDir = C:\Users\marlo\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\
+build_property.ProjectDir = C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\marlo\source\repos\AppWebDesbloqueos\AppWebDesbloqueos
+build_property.MSBuildProjectDirectory = C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Home/Index.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/CentrosNegocios/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VudHJvc05lZ29jaW9zXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/CentrosNegocios/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VudHJvc05lZ29jaW9zXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/CentrosNegocios/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VudHJvc05lZ29jaW9zXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/CentrosNegocios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VudHJvc05lZ29jaW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/CentrosNegocios/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VudHJvc05lZ29jaW9zXFJlZ2lzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Desbloqueos/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYmxvcXVlb3NcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Desbloqueos/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYmxvcXVlb3NcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Desbloqueos/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYmxvcXVlb3NcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Desbloqueos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYmxvcXVlb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Desbloqueos/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzYmxvcXVlb3NcUmVnaXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Estados/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Estados/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Estados/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Estados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Estados/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xSZWdpc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Home/Privacy.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/Error.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Listas/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Listas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Listas/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Listas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Listas/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFzXFJlZ2lzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Observaciones/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25lc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Observaciones/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25lc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Observaciones/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25lc1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Observaciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Observaciones/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25lc1xSZWdpc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/OperacionesRealizadas/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFjaW9uZXNSZWFsaXphZGFzXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/OperacionesRealizadas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFjaW9uZXNSZWFsaXphZGFzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/OperacionesRealizadas/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFjaW9uZXNSZWFsaXphZGFzXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/OperacionesRealizadas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFjaW9uZXNSZWFsaXphZGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/OperacionesRealizadas/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFjaW9uZXNSZWFsaXphZGFzXFJlZ2lzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Detalles.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Editar.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Eliminar.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Eliminar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWxpbWluYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Index.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Registrar.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Usuarios/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVnaXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/_ViewImports.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/_ViewStart.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marlo/source/repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/_Layout.cshtml]
+[C:/Users/marlon_jimenez/Source/Repos/AppWebDesbloqueos/AppWebDesbloqueos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sux638k1um

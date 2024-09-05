@@ -1,0 +1,18 @@
+﻿@model CentroNegocioModel
+
+@{
+    ViewData["Title"] = "Registro de Centros Negocios";
+}
+
+<h1>Registro de Centro Negocio</h1>
+<form method="post" class="form-floating">
+    <div class="form-group">
+        <label asp-for="NombreCn"></label>
+        <input class="form-control" asp-for="NombreCn" />
+    </div>
+
+    <br />
+    <div ckass="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
+    </div>
+</form>

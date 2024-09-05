@@ -1,0 +1,24 @@
+﻿@model CentroNegocioModel
+
+@{
+    ViewData["Title"] = "Eliminar Centro Negocio";
+}
+
+<h1>Eliminar</h1>
+
+<div>
+    <h4>¿Estas seguro de eliminar este Centro Negocio?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(CentroNegocioModel => CentroNegocioModel.NombreCn)
+        </dt>
+    </dl>
+</div>
+<div>
+    <form asp-action="Eliminar" method="post">
+        <input type="hidden" asp-for="IdCn" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
