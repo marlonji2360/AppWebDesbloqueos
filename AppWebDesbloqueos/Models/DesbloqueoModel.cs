@@ -2,8 +2,7 @@
 {
     public class DesbloqueoModel
     {
-        public int Id { get; set; }
-        public string? Usuario { get; set; }
+        public int Id { get; set; }        
         public string? Nombre { get; set; }
         public DateTime? FechaCorreo { get; set; }
         public string? OperacionRealizada1 { get; set; }

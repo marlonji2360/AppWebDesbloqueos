@@ -32,7 +32,9 @@
                     <th>Lista</th>
                     <th>CN</th>    
                     <th>
-                        <a asp-action="Index" asp-route-sortOrder="@ViewBag.EstadoSortParm">Estado</a>
+
+                        <a href="@Url.Action("Index", new { tipoOrdenamiento = "estado_desc" })">Estado</a>
+
                     </th>  
                 </tr>
             </thead>
@@ -44,7 +46,7 @@
                         <tr>
                             
                             <td>@item.Id</td>
-                            <td>@item.Usuario</td>
+                            <td>@item.UsuarioCreacion</td>
                             <td>@item.Nombre</td>
                             <td>@item.FechaCorreo</td>
                             <td>@item.FechaRespuestaDesbloqueo</td>

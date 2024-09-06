@@ -7,10 +7,7 @@
 <h1>Registro de desbloqueos</h1>
 <br />
 <form method="post" class="row g-3 form-floating">
-    <div class="col-md-4">
-        <label asp-for="Usuario"></label>
-        @Html.DropDownList("Usuario", ViewBag.Usuarios as SelectList, "Selecciona un Usuario", new { @class = "form-control" })
-    </div>
+    
     <div class="col-md-4">
         <label asp-for="Nombre"></label>
         <input class="form-control" asp-for="Nombre" />

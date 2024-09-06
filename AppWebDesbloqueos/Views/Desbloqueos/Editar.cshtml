@@ -9,12 +9,7 @@
 
 <form class="row g-3" asp-action="Editar" method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <input type="hidden" asp-for="Id" />
-    <div class="col-md-4 form-group">
-        <label asp-for="Usuario" class="control-label"></label>
-        @Html.DropDownList("Usuario", ViewBag.Usuarios as SelectList, "Selecciona un Usuario", new { @class = "form-control" })
-        <span asp-validation-for="Usuario" class="text-danger"></span>
-    </div>
+    <input type="hidden" asp-for="Id" />   
     <div class="col-md-4 form-group">
         <label asp-for="Nombre" class="control-label"></label>
         <input asp-for="Nombre" class="form-control" />
