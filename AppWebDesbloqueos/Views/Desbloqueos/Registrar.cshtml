@@ -28,14 +28,7 @@
         <label asp-for="FechaRespuestaDesbloqueo">Fecha y Hora de Respuesta</label>
         <input class="form-control" asp-for="FechaRespuestaDesbloqueo" />
     </div>               
-    <div class="col-md-4">
-        <label asp-for="OperacionRealizada2">Otra Operación Realizada</label>
-        @Html.DropDownList("OperacionRealizada2", ViewBag.Operaciones as SelectList, "Selecciona una Operacion", new { @class = "form-control" })
-    </div>
-    <div class="col-md-4">
-        <label asp-for="Fecha2">Fecha de Bloqueo</label>
-        <input class="form-control" asp-for="Fecha2" />
-    </div>    
+   
     <div class="col-md-4">
         <label asp-for="Observacion">Observación</label>
         @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
@@ -58,14 +51,7 @@
             <option value="NO">NO</option>
         </select>
     </div>
-    <div class="col-md-4">
-        <label asp-for="InformesRegulatorio">Informes Regulatorio</label>
-        <input class="form-control" asp-for="InformesRegulatorio" />
-    </div>
-    <div class="col-md-4">
-        <label asp-for="AccResultado"></label>
-        <input class="form-control" asp-for="AccResultado" />
-    </div>
+    
     <div class="col-md-8">
         <label asp-for="Observaciones">Observaciones Adicionales</label>
         <input class="form-control" asp-for="Observaciones" />

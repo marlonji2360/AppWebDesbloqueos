@@ -36,22 +36,18 @@ namespace AppWebDesbloqueos.Controllers
                                 Nombre = dt.Rows[i][1].ToString(),
                                 FechaCorreo = TryParseDateTimeNullable(dt.Rows[i][2].ToString()),
                                 OperacionRealizada1 = dt.Rows[i][3].ToString(),
-                                FechaRespuestaDesbloqueo = TryParseDateTimeNullable(dt.Rows[i][4].ToString()),
-                                OperacionRealizada2 = dt.Rows[i][5].ToString(),
-                                Fecha2 = TryParseDateTimeNullable(dt.Rows[i][6].ToString()),
-                                Observaciones = dt.Rows[i][7].ToString(),
-                                Lista = dt.Rows[i][8].ToString(),
-                                Cn = dt.Rows[i][9].ToString(),
-                                Observacion = dt.Rows[i][10].ToString(),
-                                TiempoDeAtencion = dt.Rows[i][11].ToString(),
-                                Accionista = dt.Rows[i][12].ToString(),
-                                InformesRegulatorio = dt.Rows[i][13].ToString(),
-                                AccResultado = dt.Rows[i][14].ToString(),
-                                UsuarioCreacion = dt.Rows[i][15].ToString(),
-                                UsuarioModificacion = dt.Rows[i][16].ToString(),
-                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][17].ToString()),
-                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][18].ToString()),
-                                Estado = dt.Rows[i][19].ToString()
+                                FechaRespuestaDesbloqueo = TryParseDateTimeNullable(dt.Rows[i][4].ToString()),                                
+                                Observaciones = dt.Rows[i][5].ToString(),
+                                Lista = dt.Rows[i][6].ToString(),
+                                Cn = dt.Rows[i][7].ToString(),
+                                Observacion = dt.Rows[i][8].ToString(),
+                                TiempoDeAtencion = dt.Rows[i][9].ToString(),
+                                Accionista = dt.Rows[i][10].ToString(),                               
+                                UsuarioCreacion = dt.Rows[i][11].ToString(),
+                                UsuarioModificacion = dt.Rows[i][12].ToString(),
+                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
+                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
+                                Estado = dt.Rows[i][15].ToString()
 
                             });
                         }
@@ -91,21 +87,17 @@ namespace AppWebDesbloqueos.Controllers
                                 FechaCorreo = TryParseDateTimeNullable(dt.Rows[i][2].ToString()),
                                 OperacionRealizada1 = dt.Rows[i][3].ToString(),
                                 FechaRespuestaDesbloqueo = TryParseDateTimeNullable(dt.Rows[i][4].ToString()),
-                                OperacionRealizada2 = dt.Rows[i][5].ToString(),
-                                Fecha2 = TryParseDateTimeNullable(dt.Rows[i][6].ToString()),
-                                Observaciones = dt.Rows[i][7].ToString(),
-                                Lista = dt.Rows[i][8].ToString(),
-                                Cn = dt.Rows[i][9].ToString(),
-                                Observacion = dt.Rows[i][10].ToString(),
-                                TiempoDeAtencion = dt.Rows[i][11].ToString(),
-                                Accionista = dt.Rows[i][12].ToString(),
-                                InformesRegulatorio = dt.Rows[i][13].ToString(),
-                                AccResultado = dt.Rows[i][14].ToString(),
-                                UsuarioCreacion = dt.Rows[i][15].ToString(),
-                                UsuarioModificacion = dt.Rows[i][16].ToString(),
-                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][17].ToString()),
-                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][18].ToString()),
-                                Estado = dt.Rows[i][19].ToString()
+                                Observaciones = dt.Rows[i][5].ToString(),
+                                Lista = dt.Rows[i][6].ToString(),
+                                Cn = dt.Rows[i][7].ToString(),
+                                Observacion = dt.Rows[i][8].ToString(),
+                                TiempoDeAtencion = dt.Rows[i][9].ToString(),
+                                Accionista = dt.Rows[i][10].ToString(),
+                                UsuarioCreacion = dt.Rows[i][11].ToString(),
+                                UsuarioModificacion = dt.Rows[i][12].ToString(),
+                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
+                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
+                                Estado = dt.Rows[i][15].ToString()
 
                             });
                         }
@@ -139,21 +131,17 @@ namespace AppWebDesbloqueos.Controllers
                                 FechaCorreo = TryParseDateTimeNullable(dt.Rows[i][2].ToString()),
                                 OperacionRealizada1 = dt.Rows[i][3].ToString(),
                                 FechaRespuestaDesbloqueo = TryParseDateTimeNullable(dt.Rows[i][4].ToString()),
-                                OperacionRealizada2 = dt.Rows[i][5].ToString(),
-                                Fecha2 = TryParseDateTimeNullable(dt.Rows[i][6].ToString()),
-                                Observaciones = dt.Rows[i][7].ToString(),
-                                Lista = dt.Rows[i][8].ToString(),
-                                Cn = dt.Rows[i][9].ToString(),
-                                Observacion = dt.Rows[i][10].ToString(),
-                                TiempoDeAtencion = dt.Rows[i][11].ToString(),
-                                Accionista = dt.Rows[i][12].ToString(),
-                                InformesRegulatorio = dt.Rows[i][13].ToString(),
-                                AccResultado = dt.Rows[i][14].ToString(),
-                                UsuarioCreacion = dt.Rows[i][15].ToString(),
-                                UsuarioModificacion = dt.Rows[i][16].ToString(),
-                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][17].ToString()),
-                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][18].ToString()),
-                                Estado = dt.Rows[i][19].ToString()
+                                Observaciones = dt.Rows[i][5].ToString(),
+                                Lista = dt.Rows[i][6].ToString(),
+                                Cn = dt.Rows[i][7].ToString(),
+                                Observacion = dt.Rows[i][8].ToString(),
+                                TiempoDeAtencion = dt.Rows[i][9].ToString(),
+                                Accionista = dt.Rows[i][10].ToString(),
+                                UsuarioCreacion = dt.Rows[i][11].ToString(),
+                                UsuarioModificacion = dt.Rows[i][12].ToString(),
+                                FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
+                                FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
+                                Estado = dt.Rows[i][15].ToString()
 
                             });
                         }
@@ -186,26 +174,22 @@ namespace AppWebDesbloqueos.Controllers
                     {
                         lista.Add(new DesbloqueoModel()
                         {
-                            Id = Convert.ToInt32(dt.Rows[i][0]),                            
+                            Id = Convert.ToInt32(dt.Rows[i][0]),
                             Nombre = dt.Rows[i][1].ToString(),
                             FechaCorreo = TryParseDateTimeNullable(dt.Rows[i][2].ToString()),
                             OperacionRealizada1 = dt.Rows[i][3].ToString(),
                             FechaRespuestaDesbloqueo = TryParseDateTimeNullable(dt.Rows[i][4].ToString()),
-                            OperacionRealizada2 = dt.Rows[i][5].ToString(),
-                            Fecha2 = TryParseDateTimeNullable(dt.Rows[i][6].ToString()),
-                            Observaciones = dt.Rows[i][7].ToString(),
-                            Lista = dt.Rows[i][8].ToString(),
-                            Cn = dt.Rows[i][9].ToString(),
-                            Observacion = dt.Rows[i][10].ToString(),
-                            TiempoDeAtencion = dt.Rows[i][11].ToString(),
-                            Accionista = dt.Rows[i][12].ToString(),
-                            InformesRegulatorio = dt.Rows[i][13].ToString(),
-                            AccResultado = dt.Rows[i][14].ToString(),
-                            UsuarioCreacion = dt.Rows[i][15].ToString(),
-                            UsuarioModificacion = dt.Rows[i][16].ToString(),
-                            FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][17].ToString()),
-                            FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][18].ToString()),
-                            Estado = dt.Rows[i][19].ToString()
+                            Observaciones = dt.Rows[i][5].ToString(),
+                            Lista = dt.Rows[i][6].ToString(),
+                            Cn = dt.Rows[i][7].ToString(),
+                            Observacion = dt.Rows[i][8].ToString(),
+                            TiempoDeAtencion = dt.Rows[i][9].ToString(),
+                            Accionista = dt.Rows[i][10].ToString(),
+                            UsuarioCreacion = dt.Rows[i][11].ToString(),
+                            UsuarioModificacion = dt.Rows[i][12].ToString(),
+                            FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
+                            FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
+                            Estado = dt.Rows[i][15].ToString()
 
                         });
                     }
@@ -410,17 +394,12 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@NOMBRE", System.Data.SqlDbType.VarChar).Value = obs.Nombre;
                     cmd.Parameters.AddWithValue("@FECHA_CORREO", System.Data.SqlDbType.DateTime).Value = obs.FechaCorreo;
                     cmd.Parameters.AddWithValue("@OPERACION_REALIZADA_1", System.Data.SqlDbType.VarChar).Value = obs.OperacionRealizada1;
-                    cmd.Parameters.AddWithValue("@FECHA_RESPUESTA_DESBLOQUEO", System.Data.SqlDbType.DateTime).Value = obs.FechaRespuestaDesbloqueo;
-                    cmd.Parameters.AddWithValue("@OPERACION_REALIZADA_2", obs.OperacionRealizada2 ?? (object)DBNull.Value);
-
-                    cmd.Parameters.AddWithValue("@FECHA_2", obs.Fecha2 ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@FECHA_RESPUESTA_DESBLOQUEO", System.Data.SqlDbType.DateTime).Value = obs.FechaRespuestaDesbloqueo;                    
                     cmd.Parameters.AddWithValue("@OBSERVACIONES", obs.Observaciones ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@LISTA", System.Data.SqlDbType.VarChar).Value = obs.Lista;
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
-                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@INFORMES_REGULATORIO", obs.Accionista ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@ACC_RESULTADO", obs.Accionista ?? (object)DBNull.Value);        
+                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                    
                     cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Substring(8);
                     cmd.Parameters.AddWithValue("@ESTADO", System.Data.SqlDbType.VarChar).Value = obs.Estado;
                     con.Open();
@@ -657,17 +636,13 @@ namespace AppWebDesbloqueos.Controllers
                             Nombre = reader["Nombre"].ToString(),
                             FechaCorreo = TryParseDateTimeNullable(reader["Fecha_Correo"].ToString()),
                             OperacionRealizada1 = reader["Operacion_Realizada_1"].ToString(),
-                            FechaRespuestaDesbloqueo = TryParseDateTimeNullable(reader["Fecha_Respuesta_Desbloqueo"].ToString()),
-                            OperacionRealizada2 = reader["Operacion_Realizada_2"].ToString(),
-                            Fecha2 = TryParseDateTimeNullable(reader["Fecha_2"].ToString()),
+                            FechaRespuestaDesbloqueo = TryParseDateTimeNullable(reader["Fecha_Respuesta_Desbloqueo"].ToString()),                            
                             Observaciones = reader["Observaciones"].ToString(),
                             Lista = reader["Lista"].ToString(),
                             Cn = reader["CN"].ToString(),
                             Observacion = reader["Observacion"].ToString(),
                             TiempoDeAtencion = reader["Tiempo_Atencion"].ToString(),
-                            Accionista = reader["Accionista"].ToString(),
-                            InformesRegulatorio = reader["Informes_Regulatorio"].ToString(),
-                            AccResultado = reader["Acc_Resultado"].ToString(),
+                            Accionista = reader["Accionista"].ToString(),                           
                             UsuarioCreacion = reader["Usuario_Creacion"].ToString(),
                             UsuarioModificacion = reader["Usuario_Modificacion"].ToString(),
                             FechaCreacion = TryParseDateTimeNullable(reader["Fecha_Creacion"].ToString()),
@@ -700,16 +675,11 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@FECHA_CORREO", System.Data.SqlDbType.DateTime).Value = obs.FechaCorreo;
                     cmd.Parameters.AddWithValue("@OPERACION_REALIZADA_1", System.Data.SqlDbType.VarChar).Value = obs.OperacionRealizada1;
                     cmd.Parameters.AddWithValue("@FECHA_RESPUESTA_DESBLOQUEO", System.Data.SqlDbType.DateTime).Value = obs.FechaRespuestaDesbloqueo;
-                    
-                    cmd.Parameters.AddWithValue("@OPERACION_REALIZADA_2", obs.OperacionRealizada2 ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@FECHA_2", obs.Fecha2 ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@OBSERVACIONES", System.Data.SqlDbType.VarChar).Value = obs.Observaciones;
                     cmd.Parameters.AddWithValue("@LISTA", System.Data.SqlDbType.VarChar).Value = obs.Lista;
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
-                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@INFORMES_REGULATORIO", obs.Accionista ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@ACC_RESULTADO", obs.Accionista ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                 
                     cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Substring(8);
                     cmd.Parameters.AddWithValue("@ESTADO", obs.Estado ?? (object)DBNull.Value);
                     con.Open();

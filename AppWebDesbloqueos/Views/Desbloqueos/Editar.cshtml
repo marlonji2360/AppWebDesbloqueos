@@ -35,16 +35,7 @@
         <input asp-for="FechaRespuestaDesbloqueo" class="form-control" />
         <span asp-validation-for="FechaRespuestaDesbloqueo" class="text-danger"></span>
     </div>
-    <div class="col-md-4 form-group">
-        <label asp-for="OperacionRealizada2" class="control-label">Otra Operación Realizada</label>
-        @Html.DropDownList("OperacionRealizada2", ViewBag.Operaciones2 as SelectList, "Selecciona una Operacion Realizada", new { @class = "form-control" })
-        <span asp-validation-for="OperacionRealizada2" class="text-danger"></span>
-    </div>
-    <div class="col-md-4 form-group">
-        <label asp-for="Fecha2" class="control-label">Fecha de Bloqueo</label>
-        <input asp-for="Fecha2" class="form-control" />
-        <span asp-validation-for="Fecha2" class="text-danger"></span>
-    </div>
+    
     <div class="col-md-4 form-group">
         <label asp-for="Observacion" class="control-label">Observación</label>
         @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
@@ -71,16 +62,7 @@
         @Html.DropDownList("Estado", ViewBag.Estados as SelectList, "Selecciona un Estado", new { @class = "form-control" })
         <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
-    <div class="col-md-4 form-group">
-        <label asp-for="InformesRegulatorio" class="control-label"></label>
-        <input asp-for="InformesRegulatorio" class="form-control" />
-        <span asp-validation-for="InformesRegulatorio" class="text-danger"></span>
-    </div>
-    <div class="col-md-4 form-group">
-        <label asp-for="AccResultado" class="control-label"></label>
-        <input asp-for="AccResultado" class="form-control" />
-        <span asp-validation-for="AccResultado" class="text-danger"></span>
-    </div>    
+    
     <div class="col-md-8 form-group">
         <label asp-for="Observaciones" class="control-label"></label>
         <input asp-for="Observaciones" class="form-control" />
