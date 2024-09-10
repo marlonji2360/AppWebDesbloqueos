@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\172.16.188.219\AppWebDesbloqueos</_PublishTargetUrl>
+    <History>True|2024-09-09T17:53:57.7798502Z||;True|2024-09-09T11:42:40.8727546-06:00||;True|2024-09-09T11:36:48.3902206-06:00||;True|2024-09-09T11:33:52.9787355-06:00||;True|2024-09-09T11:32:00.5476064-06:00||;True|2024-09-09T11:30:57.2067245-06:00||;True|2024-09-09T09:20:45.5133581-06:00||;False|2024-09-09T09:16:21.3924598-06:00||;False|2024-09-09T09:15:05.0342889-06:00||;False|2024-09-09T09:09:20.0810340-06:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
