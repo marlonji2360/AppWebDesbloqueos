@@ -230,7 +230,10 @@ C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Rel
 C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\AppWebDesbloqueos.pdb
 C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\AppWebDesbloqueos.genruntimeconfig.cache
 C:\Users\marlon_jimenez\Source\Repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\ref\AppWebDesbloqueos.dll
-C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\EPPlus.dll
-C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\EPPlus.Interfaces.dll
-C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\EPPlus.System.Drawing.dll
-C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\ClosedXML.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\ExcelNumberFormat.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\Irony.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\SixLabors.Fonts.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\System.IO.Packaging.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\bin\Release\net8.0\XLParser.dll

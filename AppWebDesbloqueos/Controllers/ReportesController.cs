@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using System.Data;
-using OfficeOpenXml;
+using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Drawing;
 
 namespace AppWebDesbloqueos.Controllers
 {
@@ -29,60 +30,71 @@ namespace AppWebDesbloqueos.Controllers
 
             return View(desbloqueos);
         }
-
-        // Acción para exportar a Excel
+        
         public IActionResult ExportarExcel(DateTime? fechaInicio, DateTime? fechaFin)
         {
+            // Obtener productos por rango de fechas
             var desbloqueos = ObtenerDesbloqueosPorRangoFecha(fechaInicio.Value, fechaFin.Value);
 
-            using (var package = new ExcelPackage())
+            using (var workbook = new XLWorkbook())
             {
-                var worksheet = package.Workbook.Worksheets.Add("Productos");
-                worksheet.Cells["A1"].Value = "ID";
-                worksheet.Cells["B1"].Value = "Nombre";
-                worksheet.Cells["C1"].Value = "Fecha de Correo";
-                worksheet.Cells["D1"].Value = "Operación Realizada";
-                worksheet.Cells["E1"].Value = "Fecha de Respuesta";
-                worksheet.Cells["F1"].Value = "Observaciones";
-                worksheet.Cells["G1"].Value = "Lista";
-                worksheet.Cells["H1"].Value = "CN";
-                worksheet.Cells["I1"].Value = "Otras Observaciones";
-                worksheet.Cells["J1"].Value = "Tiempo de Atención";
-                worksheet.Cells["K1"].Value = "Accionesta";
-                worksheet.Cells["L1"].Value = "Usuario de Creación";
-                worksheet.Cells["M1"].Value = "Usuario de Modificación";
-                worksheet.Cells["N1"].Value = "Estado";
-                
+                var worksheet = workbook.Worksheets.Add("Desbloqueos");
 
+                // Agregar encabezados
+                worksheet.Cell(1, 1).Value = "ID";
+                worksheet.Cell(1, 2).Value = "Nombre";
+                worksheet.Cell(1, 3).Value = "Fecha de Correo";
+                worksheet.Cell(1, 4).Value = "Operación Realizada";
+                worksheet.Cell(1, 5).Value = "Fecha de Respuesta";
+                worksheet.Cell(1, 6).Value = "Observaciones";
+                worksheet.Cell(1, 7).Value = "Lista";
+                worksheet.Cell(1, 8).Value = "CN";
+                worksheet.Cell(1, 9).Value = "Otras Observaciones";
+                worksheet.Cell(1, 10).Value = "Tiempo de Atención";
+                worksheet.Cell(1, 11).Value = "Accionesta";
+                worksheet.Cell(1, 12).Value = "Usuario de Creación";
+                worksheet.Cell(1, 13).Value = "Usuario de Modificación";
+                worksheet.Cell(1, 14).Value = "Estado";
+
+                // Llenar datos
                 int row = 2;
                 foreach (var desbloqueo in desbloqueos)
                 {
-                    worksheet.Cells[row, 1].Value = desbloqueo.Id;
-                    worksheet.Cells[row, 2].Value = desbloqueo.Nombre;
-                    worksheet.Cells[row, 3].Value = TryParseDateTimeNullable(desbloqueo.FechaCorreo?.ToString("dd/MM/yyyy"));
-                    worksheet.Cells[row, 3].Style.Numberformat.Format = "dd/mm/yyyy";
-                    worksheet.Cells[row, 4].Value = desbloqueo.OperacionRealizada1;
-                    worksheet.Cells[row, 5].Value = TryParseDateTimeNullable(desbloqueo.FechaRespuestaDesbloqueo?.ToString("dd/MM/yyyy"));
-                    worksheet.Cells[row, 5].Style.Numberformat.Format = "dd/mm/yyyy";
-                    worksheet.Cells[row, 6].Value = desbloqueo.Observaciones;
-                    worksheet.Cells[row, 7].Value = desbloqueo.Lista;
-                    worksheet.Cells[row, 8].Value = desbloqueo.Cn;
-                    worksheet.Cells[row, 9].Value = desbloqueo.Observacion;
-                    worksheet.Cells[row, 10].Value = desbloqueo.TiempoDeAtencion;
-                    worksheet.Cells[row, 11].Value = desbloqueo.Accionista;
-                    worksheet.Cells[row, 12].Value = desbloqueo.UsuarioCreacion;
-                    worksheet.Cells[row, 13].Value = desbloqueo.UsuarioModificacion;
-                    worksheet.Cells[row, 14].Value = desbloqueo.Estado;
+                    worksheet.Cell(row, 1).Value = desbloqueo.Id;
+                    worksheet.Cell(row, 2).Value = desbloqueo.Nombre;
+                    worksheet.Cell(row, 3).Value = TryParseDateTimeNullable(desbloqueo.FechaCorreo?.ToString("dd/MM/yyyy"));
+                    worksheet.Cell(row, 3).Style.NumberFormat.Format = "dd/mm/yyyy";
+                    worksheet.Cell(row, 4).Value = desbloqueo.OperacionRealizada1;
+                    worksheet.Cell(row, 5).Value = TryParseDateTimeNullable(desbloqueo.FechaRespuestaDesbloqueo?.ToString("dd/MM/yyyy"));
+                    worksheet.Cell(row, 5).Style.NumberFormat.Format = "dd/mm/yyyy";
+                    worksheet.Cell(row, 6).Value = desbloqueo.Observaciones;
+                    worksheet.Cell(row, 7).Value = desbloqueo.Lista;
+                    worksheet.Cell(row, 8).Value = desbloqueo.Cn;
+                    worksheet.Cell(row, 9).Value = desbloqueo.Observacion;
+                    worksheet.Cell(row, 10).Value = desbloqueo.TiempoDeAtencion;
+                    worksheet.Cell(row, 11).Value = desbloqueo.Accionista;
+                    worksheet.Cell(row, 12).Value = desbloqueo.UsuarioCreacion;
+                    worksheet.Cell(row, 13).Value = desbloqueo.UsuarioModificacion;
+                    worksheet.Cell(row, 14).Value = desbloqueo.Estado;
                     row++;
                 }
 
-                var stream = new MemoryStream();
-                package.SaveAs(stream);
-                stream.Position = 0;
+                // Ajustar el ancho de las columnas
+                worksheet.Columns().AdjustToContents();
 
-                string excelName = $"ReporteDesbloqueos-{DateTime.Now.ToString("yyyyMMddHHmmss")}.xlsx";
+               
 
-                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", excelName);
+                // Guardar en un MemoryStream
+                using (var stream = new MemoryStream())
+                {
+                    workbook.SaveAs(stream);
+                    stream.Position = 0; // Volver al inicio del stream
+
+                    var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                    var fileName = $"ReporteDesbloqueos-{DateTime.Now.ToString("yyyyMMddHHmmss")}.xlsx";
+
+                    return File(stream.ToArray(), contentType, fileName);
+                }
             }
         }
 

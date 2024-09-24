@@ -50,9 +50,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "EPPlus": {
+            "ClosedXML": {
               "target": "Package",
-              "version": "[7.3.2, )"
+              "version": "[0.102.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
