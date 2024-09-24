@@ -5,6 +5,9 @@ C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Rel
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\AppWebDesbloqueos.deps.json
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\AppWebDesbloqueos.runtimeconfig.json
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\AppWebDesbloqueos.pdb
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\EPPlus.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\EPPlus.Interfaces.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\EPPlus.System.Drawing.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Humanizer.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
@@ -23,6 +26,7 @@ C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Rel
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.DiaSymReader.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.NET.StringTools.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\marlon_jimenez\source\repos\AppWebDesbloqueos\AppWebDesbloqueos\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll

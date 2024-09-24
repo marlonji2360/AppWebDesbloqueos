@@ -1,0 +1,84 @@
+﻿@model List<AppWebDesbloqueos.Models.DesbloqueoModel>
+
+@{
+    ViewData["Title"] = "Reportes de Productos";
+}
+
+<h2>Reportes de Desbloqueos</h2>
+
+<!-- Filtros de Fecha y Botones -->
+<form method="get" asp-action="Index">
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="fechaInicio">Fecha Inicio:</label>
+            <input type="date" id="fechaInicio" name="fechaInicio" class="form-control" value="@ViewBag.FechaInicio?.ToString("yyyy-MM-dd")" />
+        </div>
+
+        <div class="form-group col-md-3">
+            <label for="fechaFin">Fecha Fin:</label>
+            <input type="date" id="fechaFin" name="fechaFin" class="form-control" value="@ViewBag.FechaFin?.ToString("yyyy-MM-dd")" />
+        </div>
+
+        </br>
+        <!-- Contenedor de botones alineados horizontalmente -->
+        <div class="form-group col-md-6 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary mr-20">Buscar</button>
+
+            <!-- Botón de Exportar a Excel -->
+            <button type="submit" formaction="@Url.Action("ExportarExcel")" class="btn btn-success">        Exportar a Excel</button>
+        </div>
+    </div>
+</form>
+
+<br />
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Fecha Correo</th>
+                <th>Operación Realizada</th>
+                <th>Fecha Respuesta</th>
+                <th>Observaciones</th>
+                <th>Lista</th>
+                <th>CN</th>
+                <th>Otra Observación</th>
+                <th>Tiempo Atención</th>
+                <th>Accionista</th>
+                <th>Usuario Creación</th>
+                <th>Usuario Modificación</th>
+                <th>Estado</th>                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var desbloqueo in Model)
+            {
+                <tr>
+                    <td>@desbloqueo.Id</td>
+                    <td>@desbloqueo.Nombre</td>
+                    <td>@desbloqueo.FechaCorreo?.ToString("yyyy-MM-dd")</td>
+                    <td>@desbloqueo.OperacionRealizada1</td>
+                    <td>@desbloqueo.FechaRespuestaDesbloqueo?.ToString("yyyy-MM-dd")</td>
+                    <td>@desbloqueo.Observaciones</td>
+                    <td>@desbloqueo.Lista</td>
+                    <td>@desbloqueo.Cn</td>
+                    <td>@desbloqueo.Observacion</td>
+                    <td>@desbloqueo.TiempoDeAtencion</td>
+                    <td>@desbloqueo.Accionista</td>
+                    <td>@desbloqueo.UsuarioCreacion</td>
+                    <td>@desbloqueo.UsuarioModificacion</td>
+                    <td>@desbloqueo.Estado</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+}
+else
+{
+    <p>No se encontraron productos en el rango de fechas seleccionado.</p>
+}

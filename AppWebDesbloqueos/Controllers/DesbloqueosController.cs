@@ -1,5 +1,4 @@
 ﻿using AppWebDesbloqueos.Models;
-using AppWebDesbloqueos.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using System.Data;
@@ -222,6 +221,8 @@ namespace AppWebDesbloqueos.Controllers
 
         public IActionResult Registrar()
         {
+            
+
             using (SqlConnection con = new(Configuration["ConnectionStrings:conexion"]))
             {
                 using (SqlCommand cmd = new("CONSULTAR_CN", con))
@@ -390,6 +391,8 @@ namespace AppWebDesbloqueos.Controllers
                 
                 using (SqlCommand cmd = new("INSERTAR_DESBLOQUEOS", con))
                 {
+                    var username = User.Identity.Name;
+
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;                    
                     cmd.Parameters.AddWithValue("@NOMBRE", System.Data.SqlDbType.VarChar).Value = obs.Nombre;
                     cmd.Parameters.AddWithValue("@FECHA_CORREO", System.Data.SqlDbType.DateTime).Value = obs.FechaCorreo;
@@ -400,7 +403,7 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
                     cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                    
-                    cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Substring(8);
+                    cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8);
                     cmd.Parameters.AddWithValue("@ESTADO", System.Data.SqlDbType.VarChar).Value = obs.Estado;
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -669,6 +672,8 @@ namespace AppWebDesbloqueos.Controllers
             {
                 using (SqlCommand cmd = new("EDITAR_DESBLOQUEOS", con))
                 {
+                    var username = User.Identity.Name;
+
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@ID", System.Data.SqlDbType.VarChar).Value = obs.Id;                   
                     cmd.Parameters.AddWithValue("@NOMBRE", System.Data.SqlDbType.VarChar).Value = obs.Nombre;
@@ -680,7 +685,7 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
                     cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                 
-                    cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = System.Security.Principal.WindowsIdentity.GetCurrent().Name.Substring(8);
+                    cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8); ;
                     cmd.Parameters.AddWithValue("@ESTADO", obs.Estado ?? (object)DBNull.Value);
                     con.Open();
                     int resultado = cmd.ExecuteNonQuery();
@@ -758,5 +763,7 @@ namespace AppWebDesbloqueos.Controllers
                 }
             }
         }
+
+        
     }
 }
