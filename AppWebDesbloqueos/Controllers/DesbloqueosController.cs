@@ -393,6 +393,11 @@ namespace AppWebDesbloqueos.Controllers
                 {
                     var username = User.Identity.Name;
 
+                    if(username == null)
+                    {
+                        username = "Pruebas_Bantrab";
+                    }
+
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;                    
                     cmd.Parameters.AddWithValue("@NOMBRE", System.Data.SqlDbType.VarChar).Value = obs.Nombre;
                     cmd.Parameters.AddWithValue("@FECHA_CORREO", System.Data.SqlDbType.DateTime).Value = obs.FechaCorreo;
@@ -673,6 +678,11 @@ namespace AppWebDesbloqueos.Controllers
                 using (SqlCommand cmd = new("EDITAR_DESBLOQUEOS", con))
                 {
                     var username = User.Identity.Name;
+
+                    if (username == null)
+                    {
+                        username = "Pruebas_Bantrab";
+                    }
 
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@ID", System.Data.SqlDbType.VarChar).Value = obs.Id;                   

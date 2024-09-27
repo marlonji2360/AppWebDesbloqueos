@@ -17,8 +17,18 @@ namespace AppWebDesbloqueos.Controllers
         {
             var username = User.Identity.Name; // Captura el nombre de usuario de Active Directory
 
-            // Usa el nombre de usuario según sea necesario
-            ViewBag.Username = username.Substring(8).ToUpper();
+            if (username!=null)
+            {
+                // Usa el nombre de usuario según sea necesario
+                ViewBag.Username = username.Substring(8).ToUpper();
+            }
+
+            else
+            {
+                ViewBag.Username = "Pruebas_Bantrab";
+            }
+
+            
 
             return View();
         }
