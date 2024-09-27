@@ -43,18 +43,20 @@ namespace AppWebDesbloqueos.Controllers
                 // Agregar encabezados
                 worksheet.Cell(1, 1).Value = "ID";
                 worksheet.Cell(1, 2).Value = "Nombre";
-                worksheet.Cell(1, 3).Value = "Fecha de Correo";
-                worksheet.Cell(1, 4).Value = "Operación Realizada";
-                worksheet.Cell(1, 5).Value = "Fecha de Respuesta";
-                worksheet.Cell(1, 6).Value = "Observaciones";
-                worksheet.Cell(1, 7).Value = "Lista";
-                worksheet.Cell(1, 8).Value = "CN";
-                worksheet.Cell(1, 9).Value = "Otras Observaciones";
-                worksheet.Cell(1, 10).Value = "Tiempo de Atención";
-                worksheet.Cell(1, 11).Value = "Accionesta";
-                worksheet.Cell(1, 12).Value = "Usuario de Creación";
-                worksheet.Cell(1, 13).Value = "Usuario de Modificación";
-                worksheet.Cell(1, 14).Value = "Estado";
+                worksheet.Cell(1, 3).Value = "Tipo Documento";
+                worksheet.Cell(1, 4).Value = "Número Documento";
+                worksheet.Cell(1, 5).Value = "Fecha de Correo";
+                worksheet.Cell(1, 6).Value = "Operación Realizada";
+                worksheet.Cell(1, 7).Value = "Fecha de Respuesta";
+                worksheet.Cell(1, 8).Value = "Observaciones";
+                worksheet.Cell(1, 9).Value = "Lista";
+                worksheet.Cell(1, 10).Value = "CN";
+                worksheet.Cell(1, 11).Value = "Otras Observaciones";
+                worksheet.Cell(1, 12).Value = "Tiempo de Atención";
+                worksheet.Cell(1, 13).Value = "Accionesta";
+                worksheet.Cell(1, 14).Value = "Usuario de Creación";
+                worksheet.Cell(1, 15).Value = "Usuario de Modificación";
+                worksheet.Cell(1, 16).Value = "Estado";
 
                 // Llenar datos
                 int row = 2;
@@ -62,20 +64,22 @@ namespace AppWebDesbloqueos.Controllers
                 {
                     worksheet.Cell(row, 1).Value = desbloqueo.Id;
                     worksheet.Cell(row, 2).Value = desbloqueo.Nombre;
-                    worksheet.Cell(row, 3).Value = TryParseDateTimeNullable(desbloqueo.FechaCorreo?.ToString("dd/MM/yyyy"));
-                    worksheet.Cell(row, 3).Style.NumberFormat.Format = "dd/mm/yyyy";
-                    worksheet.Cell(row, 4).Value = desbloqueo.OperacionRealizada1;
-                    worksheet.Cell(row, 5).Value = TryParseDateTimeNullable(desbloqueo.FechaRespuestaDesbloqueo?.ToString("dd/MM/yyyy"));
+                    worksheet.Cell(row, 3).Value = desbloqueo.TipoDocumento;
+                    worksheet.Cell(row, 4).Value = desbloqueo.NumeroDocumento;
+                    worksheet.Cell(row, 5).Value = TryParseDateTimeNullable(desbloqueo.FechaCorreo?.ToString("dd/MM/yyyy"));
                     worksheet.Cell(row, 5).Style.NumberFormat.Format = "dd/mm/yyyy";
-                    worksheet.Cell(row, 6).Value = desbloqueo.Observaciones;
-                    worksheet.Cell(row, 7).Value = desbloqueo.Lista;
-                    worksheet.Cell(row, 8).Value = desbloqueo.Cn;
-                    worksheet.Cell(row, 9).Value = desbloqueo.Observacion;
-                    worksheet.Cell(row, 10).Value = desbloqueo.TiempoDeAtencion;
-                    worksheet.Cell(row, 11).Value = desbloqueo.Accionista;
-                    worksheet.Cell(row, 12).Value = desbloqueo.UsuarioCreacion;
-                    worksheet.Cell(row, 13).Value = desbloqueo.UsuarioModificacion;
-                    worksheet.Cell(row, 14).Value = desbloqueo.Estado;
+                    worksheet.Cell(row, 6).Value = desbloqueo.OperacionRealizada1;
+                    worksheet.Cell(row, 7).Value = TryParseDateTimeNullable(desbloqueo.FechaRespuestaDesbloqueo?.ToString("dd/MM/yyyy"));
+                    worksheet.Cell(row, 7).Style.NumberFormat.Format = "dd/mm/yyyy";
+                    worksheet.Cell(row, 8).Value = desbloqueo.Observaciones;
+                    worksheet.Cell(row, 9).Value = desbloqueo.Lista;
+                    worksheet.Cell(row, 10).Value = desbloqueo.Cn;
+                    worksheet.Cell(row, 11).Value = desbloqueo.Observacion;
+                    worksheet.Cell(row, 12).Value = desbloqueo.TiempoDeAtencion;
+                    worksheet.Cell(row, 13).Value = desbloqueo.Accionista;
+                    worksheet.Cell(row, 14).Value = desbloqueo.UsuarioCreacion;
+                    worksheet.Cell(row, 15).Value = desbloqueo.UsuarioModificacion;
+                    worksheet.Cell(row, 16).Value = desbloqueo.Estado;
                     row++;
                 }
 
@@ -91,7 +95,7 @@ namespace AppWebDesbloqueos.Controllers
                     stream.Position = 0; // Volver al inicio del stream
 
                     var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                    var fileName = $"ReporteDesbloqueos-{DateTime.Now.ToString("yyyyMMddHHmmss")}.xlsx";
+                    var fileName = $"ReporteDesbloqueos_{DateTime.Now.ToString("yyyyMMddHHmmss")}.xlsx";
 
                     return File(stream.ToArray(), contentType, fileName);
                 }
@@ -119,7 +123,7 @@ namespace AppWebDesbloqueos.Controllers
                         desbloqueos.Add(new DesbloqueoModel
                         {
                             Id = (int)reader["Id"],
-                            Nombre = reader["Nombre"].ToString(),
+                            Nombre = reader["Nombre"].ToString(),                            
                             FechaCorreo = TryParseDateTimeNullable(reader["Fecha_Correo"].ToString()),
                             OperacionRealizada1 = reader["Operacion_Realizada_1"].ToString(),
                             FechaRespuestaDesbloqueo = TryParseDateTimeNullable(reader["Fecha_Respuesta_Desbloqueo"].ToString()),
@@ -132,6 +136,8 @@ namespace AppWebDesbloqueos.Controllers
                             UsuarioCreacion = reader["Usuario_Creacion"].ToString(),
                             UsuarioModificacion = reader["Usuario_Modificacion"].ToString(),                            
                             Estado = reader["Estado"].ToString(),
+                            TipoDocumento = reader["Tipo_Documento"].ToString(),
+                            NumeroDocumento = reader["Numero_Documento"].ToString(),
                         });
                     }
 

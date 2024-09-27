@@ -13,6 +13,22 @@
         <input class="form-control" asp-for="Nombre" />
     </div>
     <div class="col-md-4">
+        <label asp-for="TipoDocumento">Tipo Documento</label>
+        <select asp-for="TipoDocumento" class="form-control">
+            <option value="">Selecciona una Opción</option>
+
+            <option value="DPI">DPI</option>
+
+            <option value="PASAPORTE">PASAPORTE</option>
+
+            <option value="OTRO">OTRO</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label asp-for="NumeroDocumento">Número Documento</label>
+        <input class="form-control" asp-for="NumeroDocumento" />
+    </div>
+    <div class="col-md-4">
         <label asp-for="FechaCorreo">Fecha y Hora Ingreso de Correo</label>
         <input class="form-control" asp-for="FechaCorreo" />
     </div>

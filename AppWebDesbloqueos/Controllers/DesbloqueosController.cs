@@ -46,7 +46,9 @@ namespace AppWebDesbloqueos.Controllers
                                 UsuarioModificacion = dt.Rows[i][12].ToString(),
                                 FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
                                 FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
-                                Estado = dt.Rows[i][15].ToString()
+                                Estado = dt.Rows[i][15].ToString(),
+                                TipoDocumento = dt.Rows[i][16].ToString(),
+                                NumeroDocumento = dt.Rows[i][17].ToString()
 
                             });
                         }
@@ -96,7 +98,9 @@ namespace AppWebDesbloqueos.Controllers
                                 UsuarioModificacion = dt.Rows[i][12].ToString(),
                                 FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
                                 FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
-                                Estado = dt.Rows[i][15].ToString()
+                                Estado = dt.Rows[i][15].ToString(),
+                                TipoDocumento = dt.Rows[i][16].ToString(),
+                                NumeroDocumento = dt.Rows[i][17].ToString()
 
                             });
                         }
@@ -140,7 +144,10 @@ namespace AppWebDesbloqueos.Controllers
                                 UsuarioModificacion = dt.Rows[i][12].ToString(),
                                 FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
                                 FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
-                                Estado = dt.Rows[i][15].ToString()
+                                Estado = dt.Rows[i][15].ToString(),
+                                TipoDocumento = dt.Rows[i][16].ToString(),
+                                NumeroDocumento = dt.Rows[i][17].ToString()
+                                
 
                             });
                         }
@@ -188,7 +195,9 @@ namespace AppWebDesbloqueos.Controllers
                             UsuarioModificacion = dt.Rows[i][12].ToString(),
                             FechaCreacion = TryParseDateTimeNullable(dt.Rows[i][13].ToString()),
                             FechaModificacion = TryParseDateTimeNullable(dt.Rows[i][14].ToString()),
-                            Estado = dt.Rows[i][15].ToString()
+                            Estado = dt.Rows[i][15].ToString(),
+                            TipoDocumento = dt.Rows[i][16].ToString(),
+                            NumeroDocumento = dt.Rows[i][17].ToString()
 
                         });
                     }
@@ -410,6 +419,8 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                    
                     cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8);
                     cmd.Parameters.AddWithValue("@ESTADO", System.Data.SqlDbType.VarChar).Value = obs.Estado;
+                    cmd.Parameters.AddWithValue("@TIPO_DOCUMENTO", System.Data.SqlDbType.VarChar).Value = obs.TipoDocumento;
+                    cmd.Parameters.AddWithValue("@NUMERO_DOCUMENTO", System.Data.SqlDbType.VarChar).Value = obs.NumeroDocumento;
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -656,6 +667,9 @@ namespace AppWebDesbloqueos.Controllers
                             FechaCreacion = TryParseDateTimeNullable(reader["Fecha_Creacion"].ToString()),
                             FechaModificacion = TryParseDateTimeNullable(reader["Fecha_Modificacion"].ToString()),
                             Estado = reader["Estado"].ToString(),
+                            TipoDocumento = reader["TipoDocumento"].ToString(),
+                            NumeroDocumento = reader["NumeroDocumento"].ToString(),
+
 
                         };
                     }
@@ -697,6 +711,8 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                 
                     cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8); ;
                     cmd.Parameters.AddWithValue("@ESTADO", obs.Estado ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TIPO_DOCUMENTO", obs.TipoDocumento ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@NUMERO_DOCUMENTO", obs.NumeroDocumento ?? (object)DBNull.Value);
                     con.Open();
                     int resultado = cmd.ExecuteNonQuery();
                     con.Close();

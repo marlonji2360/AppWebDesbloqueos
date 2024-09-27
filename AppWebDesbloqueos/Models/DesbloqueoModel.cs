@@ -3,7 +3,7 @@
     public class DesbloqueoModel
     {
         public int Id { get; set; }        
-        public string? Nombre { get; set; }
+        public string? Nombre { get; set; }        
         public DateTime? FechaCorreo { get; set; }
         public string? OperacionRealizada1 { get; set; }
         public DateTime? FechaRespuestaDesbloqueo { get; set; }        
@@ -18,6 +18,8 @@
         public string? UsuarioModificacion { get; set; }
         public DateTime? FechaCreacion { get; set; }
         public DateTime? FechaModificacion { get; set; }
+        public string? TipoDocumento { get; set; }
+        public string? NumeroDocumento { get; set; }
 
     }
 }

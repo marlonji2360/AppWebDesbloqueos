@@ -16,6 +16,24 @@
         <span asp-validation-for="Nombre" class="text-danger"></span>
     </div>
     <div class="col-md-4 form-group">
+        <label asp-for="TipoDocumento" class="control-label"></label>
+        <select asp-for="TipoDocumento" class="form-control">
+            <option value="">Selecciona una Opción</option>
+
+            <option value="DPI">DPI</option>
+
+            <option value="PASAPORTE">PASAPORTE</option>
+
+            <option value="OTRO">OTRO</option>
+        </select>
+        <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
+        <label asp-for="NumeroDocumento" class="control-label">Número de Documento</label>
+        <input asp-for="NumeroDocumento" class="form-control" />
+        <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+    </div>
+    <div class="col-md-4 form-group">
         <label asp-for="FechaCorreo" class="control-label">Fecha y Hora Ingreso Correo</label>
         <input asp-for="FechaCorreo" class="form-control" />
         <span asp-validation-for="FechaCorreo" class="text-danger"></span>
