@@ -62,7 +62,14 @@ namespace AppWebDesbloqueos.Controllers
                     con.Close();
                 }
             }
-            return Redirect("Index");
+            if (ModelState.IsValid)
+            {
+                // Guardar en la base de datos o realizar alguna acción
+                return RedirectToAction("Index");
+            }
+
+            // Si el modelo no es válido, se vuelve a mostrar el formulario con los mensajes de error
+            return View(obs);
         }
 
         // Método GET para cargar la vista de edición con el usuario actual

@@ -253,7 +253,7 @@ namespace AppWebDesbloqueos.Controllers
 
                         });
                     }
-                    ViewBag.Cn = new SelectList(listaCn, "NombreCn", "NombreCn");
+                    ViewBag.Centros = new SelectList(listaCn, "NombreCn", "NombreCn");
                     con.Close();
                 }    
             }
@@ -427,7 +427,14 @@ namespace AppWebDesbloqueos.Controllers
                 }
                 
             }
-            return Redirect("Index");
+            if (ModelState.IsValid)
+            {
+                // Guardar en la base de datos o realizar alguna acción
+                return RedirectToAction("Index");
+            }
+
+            // Si el modelo no es válido, se vuelve a mostrar el formulario con los mensajes de error
+            return View(obs);
         }
         // Método GET para cargar la vista de edición con el usuario actual
         public IActionResult Editar(int? id)
@@ -667,8 +674,8 @@ namespace AppWebDesbloqueos.Controllers
                             FechaCreacion = TryParseDateTimeNullable(reader["Fecha_Creacion"].ToString()),
                             FechaModificacion = TryParseDateTimeNullable(reader["Fecha_Modificacion"].ToString()),
                             Estado = reader["Estado"].ToString(),
-                            TipoDocumento = reader["TipoDocumento"].ToString(),
-                            NumeroDocumento = reader["NumeroDocumento"].ToString(),
+                            TipoDocumento = reader["Tipo_Documento"].ToString(),
+                            NumeroDocumento = reader["Numero_Documento"].ToString(),
 
 
                         };

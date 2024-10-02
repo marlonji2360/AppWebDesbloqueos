@@ -55,10 +55,10 @@
     </div>
     
     <div class="col-md-4 form-group">
-        <label asp-for="Observacion" class="control-label">Observación</label>
-        @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
-        <span asp-validation-for="Observacion" class="text-danger"></span>
-    </div>    
+        <label asp-for="Observaciones" class="control-label"></label>
+        @Html.DropDownList("Observaciones", ViewBag.Observaciones as SelectList, "Selecciona una Opción", new { @class = "form-control" })
+        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    </div>
     <div class="col-md-4 form-group">
         <label asp-for="Cn" class="control-label">CN</label>
         @Html.DropDownList("Cn", ViewBag.Cns as SelectList, "Selecciona un CN", new { @class = "form-control" })
@@ -81,10 +81,10 @@
         <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
     
-    <div class="col-md-8 form-group">
-        <label asp-for="Observaciones" class="control-label"></label>
-        <input asp-for="Observaciones" class="form-control" />
-        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    <div class="col-md-12 form-group">
+        <label asp-for="Observacion" class="control-label"></label>
+        <input asp-for="Observacion" class="form-control" />
+        <span asp-validation-for="Observacion" class="text-danger"></span>
     </div>
     <br />
     <div class="form-group">

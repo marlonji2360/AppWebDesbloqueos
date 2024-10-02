@@ -9,6 +9,7 @@
     <div class="form-group">
         <label asp-for="NombreLista"></label>
         <input class="form-control" asp-for="NombreLista" />
+        <span asp-validation-for="NombreLista" class="text-danger"></span>
     </div>
 
     <br />
@@ -16,3 +17,9 @@
         <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

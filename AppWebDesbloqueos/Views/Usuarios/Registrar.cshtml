@@ -9,10 +9,12 @@
     <div class="form-group">
         <label asp-for="UsuarioSistema"></label>
         <input class="form-control" asp-for="UsuarioSistema" />
+        <span asp-validation-for="UsuarioSistema" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Nombre"></label>
         <input class="form-control" asp-for="Nombre" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
     </div>
     
     <br />
@@ -20,3 +22,9 @@
         <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

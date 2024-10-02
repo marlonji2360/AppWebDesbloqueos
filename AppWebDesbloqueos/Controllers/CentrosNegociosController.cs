@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using System.Data;
+using DocumentFormat.OpenXml.EMMA;
 
 namespace AppWebDesbloqueos.Controllers
 {
@@ -51,6 +52,7 @@ namespace AppWebDesbloqueos.Controllers
         [HttpPost]
         public IActionResult Registrar(CentroNegocioModel obs)
         {
+
             using (SqlConnection con = new(Configuration["ConnectionStrings:conexion"]))
             {
                 using (SqlCommand cmd = new("INSERTAR_CN", con))
@@ -62,7 +64,16 @@ namespace AppWebDesbloqueos.Controllers
                     con.Close();
                 }
             }
-            return Redirect("Index");
+            
+
+            if (ModelState.IsValid)
+            {
+                // Guardar en la base de datos o realizar alguna acción
+                return RedirectToAction("Index");
+            }
+
+            // Si el modelo no es válido, se vuelve a mostrar el formulario con los mensajes de error
+            return View(obs);
         }
 
         // Método GET para cargar la vista de edición con el usuario actual

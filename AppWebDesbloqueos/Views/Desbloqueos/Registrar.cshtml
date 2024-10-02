@@ -11,6 +11,7 @@
     <div class="col-md-4">
         <label asp-for="Nombre"></label>
         <input class="form-control" asp-for="Nombre" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="TipoDocumento">Tipo Documento</label>
@@ -23,39 +24,48 @@
 
             <option value="OTRO">OTRO</option>
         </select>
+        <span asp-validation-for="TipoDocumento" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="NumeroDocumento">Número Documento</label>
         <input class="form-control" asp-for="NumeroDocumento" />
+        <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="FechaCorreo">Fecha y Hora Ingreso de Correo</label>
         <input class="form-control" asp-for="FechaCorreo" />
+        <span asp-validation-for="FechaCorreo" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="Lista"></label>
         @Html.DropDownList("Lista", ViewBag.Listas as SelectList, "Selecciona una Lista", new { @class = "form-control" })
+        <span asp-validation-for="Lista" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="OperacionRealizada1">Operación Realizada</label>
         @Html.DropDownList("OperacionRealizada1", ViewBag.Operaciones as SelectList, "Selecciona una Operacion", new { @class = "form-control" })
+        <span asp-validation-for="OperacionRealizada1" class="text-danger"></span>
     </div> 
     <div class="col-md-4">
         <label asp-for="FechaRespuestaDesbloqueo">Fecha y Hora de Respuesta</label>
         <input class="form-control" asp-for="FechaRespuestaDesbloqueo" />
+        <span asp-validation-for="FechaRespuestaDesbloqueo" class="text-danger"></span>
     </div>               
    
     <div class="col-md-4">
         <label asp-for="Observacion">Observación</label>
         @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
+        <span asp-validation-for="Observacion" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="Cn">CN</label>
-        @Html.DropDownList("Cn", ViewBag.Cn as SelectList, "Selecciona un CN", new { @class = "form-control" })
+        @Html.DropDownList("Cn", ViewBag.Centros as SelectList, "Selecciona un CN", new { @class = "form-control" })
+        <span asp-validation-for="Cn" class="text-danger"></span>
     </div>   
     <div class="col-md-4">
         <label asp-for="Estado">Estado</label>
         @Html.DropDownList("Estado", ViewBag.Estados as SelectList, "Selecciona un Estado", new { @class = "form-control" })
+        <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
     <div class="col-md-4">
         <label asp-for="Accionista"></label>
@@ -66,6 +76,7 @@
 
             <option value="NO">NO</option>
         </select>
+        <span asp-validation-for="Accionista" class="text-danger"></span>
     </div>
     
     <div class="col-md-8">
@@ -77,3 +88,9 @@
         <button type="submit" class="btn btn-sm btn-primary">Registrar</button>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
