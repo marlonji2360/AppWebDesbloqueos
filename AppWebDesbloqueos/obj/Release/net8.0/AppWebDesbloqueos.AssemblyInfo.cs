@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppWebDesbloqueos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d67d904ab49541325cb116533fc8886d7e15217")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15aca6b2b6764b6d0fc2022107c8724d812dbb45")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppWebDesbloqueos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppWebDesbloqueos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

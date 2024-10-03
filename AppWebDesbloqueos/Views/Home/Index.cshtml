@@ -1,10 +1,234 @@
-﻿@{
+﻿@model DashboardViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Bienvenido, @ViewBag.Username</h1>
+    <br />
+    <hr />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Casos Pendientes</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">@ViewBag.TotalPendientes<small class="text-muted"></small></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Casos Atendidos Hoy</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">@ViewBag.TotalAtendidosHoy<small class="text-muted"></small></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Total De Casos</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">@ViewBag.TotalRegistros <small class="text-muted"></small></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    
+    <div class="container">        
+        <div class="row">
+            <div class="col-md">
+                <h3>Operaciones Realizadas Del Mes Diarias</h3>
+                <canvas id="diasChart" width="400" height="200"></canvas>
+            </div>            
+            <div class="col-md">
+                <h3>Distribución de Operaciones Realizadas X Mes</h3>
+                <canvas id="mesesChart" width="400" height="200"></canvas>
+            </div>            
+        </div>
+    </div>  
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h3>Distribución de Listas</h3>
+                <canvas id="listaChart" width="400" height="200"></canvas>
+            </div>            
+            <div class="col-md">
+                <h3>Top 10 CN</h3>
+                <canvas id="cnChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Gráfica de Listas
+        var ctx1 = document.getElementById('listaChart').getContext('2d');
+        var listaChart = new Chart(ctx1, {
+            type: 'bar',  // Puedes cambiar el tipo de gráfico (pie, bar, etc.)
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.ListaCounts.Select(x => x.Key))),
+                datasets: [{
+                    label: 'Lista',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.ListaCounts.Select(x => x.Value))),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+
+        // Gráfica de Operaciones Realizadas
+        var ctx2 = document.getElementById('mesesChart').getContext('2d');
+        var mesesChart = new Chart(ctx2, {
+            type: 'bar',  // Cambié el tipo a 'bar', pero puedes usar cualquier otro
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.MesesCounts.Select(x => x.Key))),
+                datasets: [{
+                    label: 'Operaciones Realizadas',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.MesesCounts.Select(x => x.Value))),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Gráfica de Operaciones Realizadas
+        var ctx2 = document.getElementById('diasChart').getContext('2d');
+        var diasChart = new Chart(ctx2, {
+            type: 'bar',  // Cambié el tipo a 'bar', pero puedes usar cualquier otro
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DiasCounts.Select(x => x.Key))),
+                datasets: [{
+                    label: 'Operaciones Realizadas',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.DiasCounts.Select(x => x.Value))),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Gráfica de Operaciones Realizadas
+        var ctx2 = document.getElementById('cnChart').getContext('2d');
+        var cnChart = new Chart(ctx2, {
+            type: 'bar',  // Cambié el tipo a 'bar', pero puedes usar cualquier otro
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.CnCounts.Select(x => x.Key))),
+                datasets: [{
+                    label: 'Operaciones Realizadas',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.CnCounts.Select(x => x.Value))),
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
 </div>
+
+

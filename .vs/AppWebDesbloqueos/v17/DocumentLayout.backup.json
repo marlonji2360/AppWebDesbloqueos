@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\views\\desbloqueos\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\views\\desbloqueos\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\controllers\\desbloqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\controllers\\desbloqueoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\models\\desbloqueomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\models\\desbloqueomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\models\\dashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\models\\dashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Registrar.cshtml",
-              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Desbloqueos\\Registrar.cshtml",
-              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Views\\Desbloqueos\\Registrar.cshtml",
-              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Desbloqueos\\Registrar.cshtml",
-              "RelativeToolTip": "AppWebDesbloqueos\\Views\\Desbloqueos\\Registrar.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AppWebDesbloqueos\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswB0AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-02T14:45:45.811Z",
+              "WhenOpened": "2024-10-02T17:20:46.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwD8AAACRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T18:15:40.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DesbloqueoModel.cs",
-              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DesbloqueoModel.cs",
-              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Models\\DesbloqueoModel.cs",
-              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DesbloqueoModel.cs",
-              "RelativeToolTip": "AppWebDesbloqueos\\Models\\DesbloqueoModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowBwAAAAIAAAAAAAAAA==",
+              "Title": "DashboardData.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DashboardData.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Models\\DashboardData.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DashboardData.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Models\\DashboardData.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwJAAAAC5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:41:19.166Z",
+              "WhenOpened": "2024-10-02T17:02:31.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DesbloqueosController.cs",
-              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\DesbloqueosController.cs",
-              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Controllers\\DesbloqueosController.cs",
-              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\DesbloqueosController.cs",
-              "RelativeToolTip": "AppWebDesbloqueos\\Controllers\\DesbloqueosController.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAmwP8AAAAjAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Models\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T14:40:26.682Z",
+              "WhenOpened": "2024-10-02T18:54:12.729Z",
               "EditorCaption": ""
             }
           ]
