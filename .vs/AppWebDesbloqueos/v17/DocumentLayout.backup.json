@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|c:\\users\\marlon_jimenez\\source\\repos\\appwebdesbloqueos\\appwebdesbloqueos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E667AF2-EA3A-4A60-B286-4F37BBA0F631}|AppWebDesbloqueos\\AppWebDesbloqueos.csproj|solutionrelative:appwebdesbloqueos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +30,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAA4wO0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T21:34:13.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Program.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Program.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Program.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:42:04.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AppWebDesbloqueos\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAuwGQAAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T18:04:58.82Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\marlon_jimenez\\source\\repos\\AppWebDesbloqueos\\AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AppWebDesbloqueos\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAswGwAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:37:05.357Z",
               "EditorCaption": ""
             }
           ]
