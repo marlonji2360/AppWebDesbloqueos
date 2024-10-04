@@ -417,10 +417,10 @@ namespace AppWebDesbloqueos.Controllers
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
                     cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                    
-                    cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8);
+                    cmd.Parameters.AddWithValue("@USUARIO_CREACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8).ToUpper();
                     cmd.Parameters.AddWithValue("@ESTADO", System.Data.SqlDbType.VarChar).Value = obs.Estado;
-                    cmd.Parameters.AddWithValue("@TIPO_DOCUMENTO", System.Data.SqlDbType.VarChar).Value = obs.TipoDocumento;
-                    cmd.Parameters.AddWithValue("@NUMERO_DOCUMENTO", System.Data.SqlDbType.VarChar).Value = obs.NumeroDocumento;
+                    cmd.Parameters.AddWithValue("@TIPO_DOCUMENTO", obs.TipoDocumento ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@NUMERO_DOCUMENTO", obs.NumeroDocumento ?? (object)DBNull.Value);
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();
@@ -706,18 +706,18 @@ namespace AppWebDesbloqueos.Controllers
                     }
 
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@ID", System.Data.SqlDbType.VarChar).Value = obs.Id;                   
+                    cmd.Parameters.AddWithValue("@ID", System.Data.SqlDbType.VarChar).Value = obs.Id;
                     cmd.Parameters.AddWithValue("@NOMBRE", System.Data.SqlDbType.VarChar).Value = obs.Nombre;
                     cmd.Parameters.AddWithValue("@FECHA_CORREO", System.Data.SqlDbType.DateTime).Value = obs.FechaCorreo;
                     cmd.Parameters.AddWithValue("@OPERACION_REALIZADA_1", System.Data.SqlDbType.VarChar).Value = obs.OperacionRealizada1;
                     cmd.Parameters.AddWithValue("@FECHA_RESPUESTA_DESBLOQUEO", System.Data.SqlDbType.DateTime).Value = obs.FechaRespuestaDesbloqueo;
-                    cmd.Parameters.AddWithValue("@OBSERVACIONES", System.Data.SqlDbType.VarChar).Value = obs.Observaciones;
+                    cmd.Parameters.AddWithValue("@OBSERVACIONES", obs.Observaciones ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@LISTA", System.Data.SqlDbType.VarChar).Value = obs.Lista;
                     cmd.Parameters.AddWithValue("@CN", System.Data.SqlDbType.VarChar).Value = obs.Cn;
                     cmd.Parameters.AddWithValue("@OBSERVACION", System.Data.SqlDbType.VarChar).Value = obs.Observacion;
-                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);                 
-                    cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8); ;
-                    cmd.Parameters.AddWithValue("@ESTADO", obs.Estado ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ACCIONISTA", obs.Accionista ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@USUARIO_MODIFICACION", System.Data.SqlDbType.VarChar).Value = username.Substring(8).ToUpper();
+                    cmd.Parameters.AddWithValue("@ESTADO", System.Data.SqlDbType.VarChar).Value = obs.Estado;
                     cmd.Parameters.AddWithValue("@TIPO_DOCUMENTO", obs.TipoDocumento ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@NUMERO_DOCUMENTO", obs.NumeroDocumento ?? (object)DBNull.Value);
                     con.Open();

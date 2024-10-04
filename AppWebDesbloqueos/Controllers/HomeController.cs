@@ -35,7 +35,7 @@ namespace AppWebDesbloqueos.Controllers
 
             else
             {
-                ViewBag.Username = "Pruebas_Bantrab";
+                ViewBag.Username = "BANTRAB/Pruebas_Bantrab";
             }
 
             // Obtén los datos para los gráficos y el total de registros

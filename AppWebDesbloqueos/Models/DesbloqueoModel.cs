@@ -17,18 +17,16 @@ namespace AppWebDesbloqueos.Models
 
         [Required(ErrorMessage = "El campo Fecha Desbloqueo es obligatorio.")]
         public DateTime? FechaRespuestaDesbloqueo { get; set; }
-
         
         public string? Observaciones { get; set; }
 
         [Required(ErrorMessage = "El campo Lista es obligatorio.")]
         public string? Lista { get; set; }
 
-
         [Required(ErrorMessage = "El campo CN es obligatorio.")]  
         public string? Cn {  get; set; }
 
-        [Required(ErrorMessage = "El campo Observacio es obligatorio.")]
+        [Required(ErrorMessage = "El campo Observación es obligatorio.")]
         public string? Observacion {  get; set; }        
         public string? TiempoDeAtencion {  get; set; }
 
@@ -40,12 +38,8 @@ namespace AppWebDesbloqueos.Models
         public string? UsuarioCreacion { get; set; }
         public string? UsuarioModificacion { get; set; }
         public DateTime? FechaCreacion { get; set; }
-        public DateTime? FechaModificacion { get; set; }
-
-        [Required(ErrorMessage = "El campo Tipo Documento es obligatorio.")]
-        public string? TipoDocumento { get; set; }
-
-        [Required(ErrorMessage = "El campo Número Documento es obligatorio.")]
+        public DateTime? FechaModificacion { get; set; }        
+        public string? TipoDocumento { get; set; }        
         public string? NumeroDocumento { get; set; }
 
     }

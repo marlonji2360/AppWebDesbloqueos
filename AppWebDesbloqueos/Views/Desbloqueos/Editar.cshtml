@@ -26,12 +26,12 @@
 
             <option value="OTRO">OTRO</option>
         </select>
-        <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+        
     </div>
     <div class="col-md-4 form-group">
         <label asp-for="NumeroDocumento" class="control-label">Número de Documento</label>
         <input asp-for="NumeroDocumento" class="form-control" />
-        <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+        
     </div>
     <div class="col-md-4 form-group">
         <label asp-for="FechaCorreo" class="control-label">Fecha y Hora Ingreso Correo</label>
@@ -54,10 +54,10 @@
         <span asp-validation-for="FechaRespuestaDesbloqueo" class="text-danger"></span>
     </div>
     
-    <div class="col-md-4 form-group">
-        <label asp-for="Observaciones" class="control-label"></label>
-        @Html.DropDownList("Observaciones", ViewBag.Observaciones as SelectList, "Selecciona una Opción", new { @class = "form-control" })
-        <span asp-validation-for="Observaciones" class="text-danger"></span>
+    <div class="col-md-4">
+        <label asp-for="Observacion">Observación</label>
+        @Html.DropDownList("Observacion", ViewBag.Observaciones as SelectList, "Selecciona una Observacion", new { @class = "form-control" })
+        <span asp-validation-for="Observacion" class="text-danger"></span>
     </div>
     <div class="col-md-4 form-group">
         <label asp-for="Cn" class="control-label">CN</label>
@@ -81,10 +81,9 @@
         <span asp-validation-for="Estado" class="text-danger"></span>
     </div>
     
-    <div class="col-md-12 form-group">
-        <label asp-for="Observacion" class="control-label"></label>
-        <input asp-for="Observacion" class="form-control" />
-        <span asp-validation-for="Observacion" class="text-danger"></span>
+    <div class="col-md-8">
+        <label asp-for="Observaciones">Observaciones Adicionales</label>
+        <input class="form-control" asp-for="Observaciones" />
     </div>
     <br />
     <div class="form-group">
@@ -92,3 +91,9 @@
         <a asp-action="Index" class="btn btn-secondary">Regresar</a>
     </div>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
